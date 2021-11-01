@@ -34,7 +34,7 @@ class ClienteController {
         });
     }
 
-    remover(cliente: Cliente): void {
+    remover(cliente: Cliente) {
         this.clientes.remover(cliente.cpf);
     }
 
