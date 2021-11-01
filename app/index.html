@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade PWeb1</title>
+</head>
+<body>
+
+<h1 class="text-center">Clientes - Banco RENATO</h1>
+
+<div id="mensagemView"></div>
+
+<form class="form">
+
+    <div class="form-group">
+        <label for="data">Data de Criação</label>
+        <input id="data" type="date" class="form-control" required autofocus/>
+    </div>
+
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" class="form-control" min="3" step="1"  value="" required/>
+    </div>
+
+    <div class="form-group">
+        <label for="cpf">CPF</label>
+        <input id="cpf" type="text" class="form-control" min="3" step="1"  value="" required/>
+    </div>
+
+    <div class="form-group">
+        <label for="conta">Conta</label>
+        <input id="conta" type="text" class="form-control" min="1" step="1"  value="4" required/>
+    </div>
+
+    <button type="submit"
+            class="btn btn-primary"
+            onclick="clienteController.inserir(event)">Inserir</button>
+
+</form>
+
+<br>
+<br>
+
+<table>
+    <thead>
+    <tr>
+        <th>LISTA DE CLIENTES</th>
+<!--        <th>CONTA</th>-->
+<!--        <th>SALDO</th>-->
+    </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+
+    <tfoot>
+    </tfoot>
+</table>
+
+
+
+
+<script src="js/model/cliente.js"></script>
+<script src="js/model/clientes.js"></script>
+<script src="js/controller/cliente-controller.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
